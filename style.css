@@ -112,3 +112,96 @@ body{
 .container .skills:nth-child(5) .percent .progress{
     background: linear-gradient(45deg, #1fe6ff, #673ab7);
 }
+
+
+/********************SECOND*************************/
+
+
+.container2{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container2 a{
+    position: relative;
+    width: 300px;
+    height: 75px;
+    margin: 10px 0;
+    font-size: 24px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.5s;
+    color: #000;
+}
+.container2 a:hover{
+    color: #fff;
+}
+.container2 a::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: url(btn-bg1.png);
+    background-size: cover;
+    transform-origin: left;
+    transition: 0.5s;
+}
+.container2 a:hover::before{
+    width: 100%;
+}
+.container2 a span{
+    position: relative;
+    z-index: 1;
+}
+
+/*********************************/
+.buttons a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+.buttons a::before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 12px);
+    background: #2e2e2e;
+    transition: 0.5s ease-in-out;
+    transform: scaleY(1);
+}
+.buttons a:hover::before{
+    transform: scaleY(0);
+}
+.buttons a::after{
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% - 12px);
+    background: #2e2e2e;
+    transition: 0.5s ease-in-out;
+    transform: scaleX(1);
+}
+.buttons a:hover::after{
+    transform: scaleX(0);
+}
+
+.buttons a span{
+    position: relative;
+    z-index :3;
+}
